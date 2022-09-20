@@ -17,89 +17,163 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class="lg:text-lg text-sm text-grayish-blue-very-dark font-medium bg-grayish-blue-very-light">
+    <div class="min-h-screen grid place-items-center">
+        <div class="bg-white lg:my-12 py-8 lg:px-12 px-4 rounded-lg lg:max-w-[54rem]">
+            <header class="flex justify-between mb-12">
+                <div class="inline-flex">
+                    <h1 class="text-xl font-extrabold text-dark-blue">Notifications</h1>
+                    <span class="text-white lg:text-lg py-0.5 px-3 rounded bg-primary-blue ml-2">3</span>
+                </div>
 
-    <main class="">
-        <div>
-            <header>
-                <h1 class="">Notifications <span>3</span></h1>
-
-                <button>Mark all as read</button>
+                <button class="hover:text-primary-blue">Mark all as read</button>
             </header>
 
-            <div>
-                <ul>
-                    <li>
-                        <div>
-                            <p><b>Mark Webber</b> reacted to your recent post <b>My first tournament today!</b></p>
+            <main>
+                <ul class="space-y-4">
+                    <li class="bg-grayish-blue-very-light lg:px-6 px-4 py-5 rounded-lg">
+                        <div class="grid grid-cols-[max-content,_1fr] lg:gap-x-6 gap-x-4">
+                            <img class="lg:h-14 h-12 aspect-square" src="./assets/images/avatar-mark-webber.webp"
+                                alt="avatar">
+                            <div>
+                                <p class="">
+                                    <a href="#"><b class="text-black hover:text-primary-blue">Mark Webber</b>
+                                    </a>
+                                    reacted to your recent post
+                                    <a href="#"><b class="hover:text-primary-blue">My first tournament today!</b></a>
+                                    <span
+                                        class="ml-1 inline-block bg-primary-red h-2 aspect-square rounded-full"></span>
+                                </p>
 
-                            <span>1m ago</span>
-                        </div>
+                                <span class="text-grayish-blue-normal">1m ago</span>
+                            </div>
 
-                        <div></div>
-                    </li>
-                    <li>
-                        <div>
-                            <p><b>Angela Gray</b> followed you</p>
-                            <span>5m ago</span>
-                        </div>
-
-                        <div></div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <p><b>Jacob Thompson</b> has joined your group Chess Club</p>
-                            <span>1 day ago</span>
-                        </div>
-                        <div></div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <p><b>Rizky Hasanuddin</b> sent you a private message</p>
-                            <span>5 days ago</span>
-                        </div>
-                        <div>
-                            <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-                                I'm already having lots of fun and improving my game.</p>
+                            <div></div>
                         </div>
                     </li>
+                    <li class="bg-grayish-blue-very-light lg:px-6 px-4 py-5 rounded-lg">
+                        <div class="grid grid-cols-[max-content,_1fr] lg:gap-x-6 gap-x-4">
+                            <img class="lg:h-14 h-12 aspect-square" src="./assets/images/avatar-angela-gray.webp"
+                                alt="avatar">
+                            <div>
+                                <div>
+                                    <p>
+                                        <a href="#"><b class="text-black hover:text-primary-blue">Angela Gray</b></a>
+                                        followed you
+                                        <span
+                                            class="ml-1 inline-block bg-primary-red h-2 aspect-square rounded-full"></span>
+                                    </p>
+                                    <span class="text-grayish-blue-normal">5m ago</span>
+                                </div>
 
-                    <li>
-                        <div>
-                            <p><b>Kimberly Smith</b> commented on your picture</p>
-                            <span>1 week ago</span>
+                                <div></div>
+                            </div>
                         </div>
-                        <div></div>
                     </li>
 
-                    <li>
-                        <div>
-                            <p><b>Nathan Peterson</b> reacted to your recent post 5 end-game strategies to increase your
-                                win rate</p>
-                            <span>2 weeks ago</span>
+                    <li class="bg-grayish-blue-very-light lg:px-6 px-4 py-5 rounded-lg">
+                        <div class="grid grid-cols-[max-content,_1fr] lg:gap-x-6 gap-x-4">
+                            <img class="lg:h-14 h-12 aspect-square" src="./assets/images/avatar-jacob-thompson.webp"
+                                alt="avatar">
+                            <div>
+                                <div>
+                                    <p>
+                                        <a href="#"><b class="text-black hover:text-primary-blue">Jacob Thompson</b></a>
+                                        has joined your group <a href="#"><b class="text-primary-blue">Chess
+                                                Club</b></a>
+                                        <span
+                                            class="ml-1 inline-block bg-primary-red h-2 aspect-square rounded-full"></span>
+                                    </p>
+                                    <span class="text-grayish-blue-normal">1 day ago</span>
+                                </div>
+                                <div></div>
+                            </div>
                         </div>
-                        <div></div>
                     </li>
 
-
-                    <li>
-                        <div>
-                            <p><b>Anna Kim</b> left the group Chess Club</p>
-                            <span>2 weeks ago</span>
+                    <li class="lg:px-6 px-4 py-5 rounded-lg">
+                        <div class="grid grid-cols-[max-content,_1fr] lg:gap-x-6 gap-x-4">
+                            <img class="lg:h-14 h-12 aspect-square" src="./assets/images/avatar-rizky-hasanuddin.webp"
+                                alt="avatar">
+                            <div>
+                                <div>
+                                    <p><a href="#"><b class="text-black hover:text-primary-blue">Rizky
+                                                Hasanuddin</b></a> sent you a
+                                        private
+                                        message</p>
+                                    <span class="text-grayish-blue-normal">5 days ago</span>
+                                </div>
+                                <div
+                                    class="mt-4 py-4 lg:px-6 px-4 rounded border border-grayish-blue-light-2 hover:bg-grayish-blue-light-2 transition">
+                                    <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks
+                                        now and
+                                        I'm already having lots of fun and improving my game.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div></div>
+                    </li>
+
+                    <li class="lg:px-6 px-4 py-5 rounded-lg">
+                        <div class="grid grid-cols-[max-content,_1fr] lg:gap-x-6 gap-x-4">
+                            <img class="lg:h-14 h-12 aspect-square" src="./assets/images/avatar-kimberly-smith.webp"
+                                alt="avatar">
+                            <div>
+                                <div>
+                                    <img class="h-12 aspect-square float-right cursor-pointer"
+                                        src="/assets/images/image-chess.webp" alt="user photo">
+                                    <p><a href="#"><b class="text-black hover:text-primary-blue">Kimberly Smith</b></a>
+                                        commented on
+                                        your picture
+                                    </p>
+                                    <span class="text-grayish-blue-normal">1 week ago</span>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="lg:px-6 px-4 py-5 rounded-lg">
+                        <div class="grid grid-cols-[max-content,_1fr] lg:gap-x-6 gap-x-4">
+                            <img class="lg:h-14 h-12 aspect-square" src="./assets/images/avatar-nathan-peterson.webp"
+                                alt="avatar">
+                            <div>
+                                <div>
+                                    <p>
+                                        <a href="#"><b class="text-black hover:text-primary-blue">Nathan
+                                                Peterson</b></a>
+                                        reacted to your recent post
+                                        <b>5 end-game strategies to increase your win rate</b>
+                                    </p>
+                                    <span class="text-grayish-blue-normal">2 weeks ago</span>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="lg:px-6 px-4 py-5 rounded-lg">
+                        <div class="grid grid-cols-[max-content,_1fr] lg:gap-x-6 gap-x-4">
+                            <img class="lg:h-14 h-12 aspect-square" src="./assets/images/avatar-anna-kim.webp"
+                                alt="avatar">
+                            <div>
+                                <div>
+                                    <p><a href="#"><b class="text-black hover:text-primary-blue">Anna Kim</b></a> left
+                                        the group <a href="#"><b class="text-primary-blue">Chess Club</b></a></p>
+                                    <span class="text-grayish-blue-normal">2 weeks ago</span>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
-            </div>
+            </main>
 
             <div class="attribution">
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
                 Coded by <a href="https://github.com/Nathan1434">Nathaniel C.</a>.
             </div>
         </div>
-    </main>
+    </div>
 </body>
 
 </html>
