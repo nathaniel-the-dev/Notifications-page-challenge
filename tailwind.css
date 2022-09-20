@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 1rem; left: 50%; transform: translateX(-50%); }
+.attribution a { color: #3e52a3; }
