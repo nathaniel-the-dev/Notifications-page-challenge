@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Go to solution](https://www.frontendmentor.io/solutions/notification-page-challenge-using-tailwindcss-4AKd1jmb9o)
+-   Live Site URL: [Go to live preview](https://notifications-page-challenge-natscamp.vercel.app/)
 
 ## My process
 
