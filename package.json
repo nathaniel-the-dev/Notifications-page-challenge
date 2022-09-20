@@ -1,15 +1,16 @@
 {
-  "name": "notifications-page-main",
-  "description": "![Design preview for the Notifications page coding challenge](./design/desktop-preview.jpg)",
-  "version": "1.0.0",
-  "main": "tailwind.config.js",
-  "devDependencies": {
-    "tailwindcss": "^3.1.8"
-  },
-  "scripts": {
-    "watch:css": "npx tailwindcss -i ./tailwind.css -o ./style.css --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "notifications-page-main",
+	"description": "![Design preview for the Notifications page coding challenge](./design/desktop-preview.jpg)",
+	"version": "1.0.0",
+	"main": "tailwind.config.js",
+	"devDependencies": {
+		"tailwindcss": "^3.1.8"
+	},
+	"scripts": {
+		"watch:css": "npx tailwindcss -i ./tailwind.css -o ./style.css --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"private": true
 }

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a solution to the Notifications page challenge on Frontend Mentor">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none'">
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -15,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js" defer></script>
 </head>
 
 <body class="lg:text-lg text-sm text-grayish-blue-very-dark font-medium bg-grayish-blue-very-light">
@@ -26,12 +30,12 @@
                     <span class="text-white lg:text-lg py-0.5 px-3 rounded bg-primary-blue ml-2">3</span>
                 </div>
 
-                <button class="hover:text-primary-blue">Mark all as read</button>
+                <button class="hover:text-primary-blue" id="markAsReadBtn">Mark all as read</button>
             </header>
 
             <main>
-                <ul class="space-y-4">
-                    <li class="bg-grayish-blue-very-light lg:px-6 px-4 py-5 rounded-lg">
+                <ul class="space-y-4" id="notifList">
+                    <li class="unread bg-grayish-blue-very-light lg:px-6 px-4 py-5 rounded-lg">
                         <div class="grid grid-cols-[max-content,_1fr] lg:gap-x-6 gap-x-4">
                             <img class="lg:h-14 h-12 aspect-square" src="./assets/images/avatar-mark-webber.webp"
                                 alt="avatar">
@@ -42,7 +46,7 @@
                                     reacted to your recent post
                                     <a href="#"><b class="hover:text-primary-blue">My first tournament today!</b></a>
                                     <span
-                                        class="ml-1 inline-block bg-primary-red h-2 aspect-square rounded-full"></span>
+                                        class="dot ml-1 inline-block bg-primary-red h-2 aspect-square rounded-full"></span>
                                 </p>
 
                                 <span class="text-grayish-blue-normal">1m ago</span>
@@ -51,7 +55,7 @@
                             <div></div>
                         </div>
                     </li>
-                    <li class="bg-grayish-blue-very-light lg:px-6 px-4 py-5 rounded-lg">
+                    <li class="unread bg-grayish-blue-very-light lg:px-6 px-4 py-5 rounded-lg">
                         <div class="grid grid-cols-[max-content,_1fr] lg:gap-x-6 gap-x-4">
                             <img class="lg:h-14 h-12 aspect-square" src="./assets/images/avatar-angela-gray.webp"
                                 alt="avatar">
@@ -61,7 +65,7 @@
                                         <a href="#"><b class="text-black hover:text-primary-blue">Angela Gray</b></a>
                                         followed you
                                         <span
-                                            class="ml-1 inline-block bg-primary-red h-2 aspect-square rounded-full"></span>
+                                            class="dot ml-1 inline-block bg-primary-red h-2 aspect-square rounded-full"></span>
                                     </p>
                                     <span class="text-grayish-blue-normal">5m ago</span>
                                 </div>
@@ -71,7 +75,7 @@
                         </div>
                     </li>
 
-                    <li class="bg-grayish-blue-very-light lg:px-6 px-4 py-5 rounded-lg">
+                    <li class="unread bg-grayish-blue-very-light lg:px-6 px-4 py-5 rounded-lg">
                         <div class="grid grid-cols-[max-content,_1fr] lg:gap-x-6 gap-x-4">
                             <img class="lg:h-14 h-12 aspect-square" src="./assets/images/avatar-jacob-thompson.webp"
                                 alt="avatar">
@@ -82,7 +86,7 @@
                                         has joined your group <a href="#"><b class="text-primary-blue">Chess
                                                 Club</b></a>
                                         <span
-                                            class="ml-1 inline-block bg-primary-red h-2 aspect-square rounded-full"></span>
+                                            class="dot ml-1 inline-block bg-primary-red h-2 aspect-square rounded-full"></span>
                                     </p>
                                     <span class="text-grayish-blue-normal">1 day ago</span>
                                 </div>
